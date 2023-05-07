@@ -1,5 +1,6 @@
 package pl.grzegorz2047.misc;
 
+import pl.grzegorz2047.misc.bouncingball.BouncingBallMap;
 import pl.grzegorz2047.misc.lines.DrawingLineMap;
 import pl.grzegorz2047.misc.polygon.RandomPolygon;
 import pl.grzegorz2047.misc.text.TextExample;

@@ -1,4 +1,4 @@
-package pl.grzegorz2047.misc;
+package pl.grzegorz2047.misc.bouncingball;
 
 
 import pl.grzegorz2047.misc.bouncingball.Ball;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class MapPanel extends JPanel {
+public class BallMapLogic extends JPanel {
     private final Random random = new Random();
     private final List<Ball> balls = new ArrayList<>();
     private static final int RECT_PADDING = 10;
@@ -19,7 +19,7 @@ public class MapPanel extends JPanel {
     private static final int RECT_HEIGHT = 20;
     private final int BALL_RADIUS = 10;
 
-    public MapPanel(int ballCount, int width, int height) {
+    public BallMapLogic(int ballCount, int width, int height) {
         for (int i = 0; i < ballCount; i++) {
             int x = BALL_RADIUS + random.nextInt(width - 2 * BALL_RADIUS - 20)+ 10;
             int y = BALL_RADIUS + random.nextInt(height - 2 * BALL_RADIUS - 20) + 10;

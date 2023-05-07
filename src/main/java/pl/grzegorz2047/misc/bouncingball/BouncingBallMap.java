@@ -1,7 +1,5 @@
 package pl.grzegorz2047.misc.bouncingball;
 
-import pl.grzegorz2047.misc.MapPanel;
-
 import javax.swing.*;
 
 public class BouncingBallMap {
@@ -15,7 +13,7 @@ public class BouncingBallMap {
         frame.setSize(WIDTH, HEIGHT);
         frame.setResizable(false);
 
-        MapPanel ballPanel = new MapPanel(10, WIDTH, HEIGHT); // Initialize with 10 balls
+        BallMapLogic ballPanel = new BallMapLogic(10, WIDTH, HEIGHT); // Initialize with 10 balls
         frame.add(ballPanel);
         frame.setVisible(true);
 
